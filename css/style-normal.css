@@ -1,0 +1,363 @@
+body {
+	margin: 0px;
+	padding: 0px;
+
+	color: white;
+
+	overflow: hidden;
+}
+
+li {
+	list-style-type: none;
+}
+
+a[href] {
+	color: white;
+	text-decoration: none;
+}
+
+h2 {
+	text-decoration: underline;
+}
+
+#bg {
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	z-index: -10;
+	top: 0px;
+	left: 0px;
+}
+
+#side_blur {
+	width: 71%;
+	height: 110px;
+
+	margin: auto;
+
+	position: absolute;
+	z-index: -9;
+	top: -1%;
+	left: calc(29% / 2);
+
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+
+	filter: blur(5px);
+	opacity: .5;
+}
+
+/*
+	HEADER
+*/
+header {
+	width: 70%;
+	min-height: 100px;
+
+	margin: auto;
+}
+
+#menu_title {
+	float: left;
+	width: 50%;
+	height: 50px;
+
+	text-align: left;
+	font-family: monospace;
+	font-size: 40px;
+
+	margin: 0px 0px 0px 0px;
+}
+#menu_title p {
+	margin: 0px;
+}
+
+#menu_follow {
+	float: right;
+	width: 50%;
+	height: 50px;
+
+	text-align: right;
+}
+
+#menu_follow_us {
+
+}
+
+#menu_follow_us li {
+	display: inline-block;
+
+	margin: 0px 0px 0px 20px;
+}
+
+.follow_link {
+
+}
+
+header hr {
+	width: 100%;
+
+	float: left;
+	margin: 0px;
+}
+
+/*
+	MENU
+*/
+#menu {
+	width: 100%;
+	height: auto;
+
+	float: right;
+
+	text-align: center;
+
+	margin: 0px;
+	padding: 0px;
+}
+
+#menu > li {
+	width: 150px;
+	height: 30px;
+
+	margin: 0px 0px 0px 0px;
+	padding: 10px 0px 0px 0px;
+
+	display: inline-block;
+}
+
+#menu > li:hover {
+	border-bottom: 1px solid white;
+}
+
+/*
+	CORE
+*/
+#core {
+	width: 65%;
+	height: auto;
+
+	margin: auto;
+
+	position: absolute;
+	z-index: -8;
+	left: calc(35% / 2);
+
+	
+}
+
+/*
+	PAGES
+*/
+#core_contener {
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+}
+
+#core_contener > li {
+	width: 100%;
+	height: 0px; 
+
+	margin: auto;
+
+	background: rgba(255,255,255,.75);
+	color: black;
+
+	overflow: auto;
+}
+
+/*
+	PRESTATAIRES
+*/
+#core_prestataires {
+	overflow: auto;
+}
+
+#core_prestataires h2 {
+	font-size: 30px;
+	margin: 20px 20px;
+
+	display: block;
+}
+#core_prestataires .news_2 {
+	margin: 20px;
+
+	display: block;
+}
+
+#core_prestataires hr {
+	width: 60%;
+
+	margin: 0px auto 20px auto;
+}
+
+#prestataires_iframe {
+	border: none;
+
+	width: 90%;
+	height: auto;
+
+	margin: auto;
+}
+
+#prestataires_contener {
+	margin: 0px 0px 0px 20px;
+	padding: 0px;
+}
+
+#prestataires_contener li {
+}
+
+.info_title {
+	font-size: 20px;
+}
+
+#googlemap {
+	width: 500px;
+	height: 500px;
+
+	margin: 30px 0px 30px 0px;
+}
+
+/*
+	NEWLETTER
+*/
+#core_newsletter {
+}
+
+#core_newsletter h2 {
+	font-size: 30px;
+	margin: 20px 20px;
+
+	display: block;
+}
+#core_newsletter .news_2 {
+	margin: 20px;
+
+	display: block;
+}
+
+#core_newsletter form {
+	margin: 0px 0px 0px 20px;
+}
+
+
+#core_newsletter input {
+	background: whitesmoke;
+
+	border: 2px solid transparent;
+	border-radius: 10px;
+	outline: none;
+
+	width: 150px;
+	height: 40px;
+
+	margin: 0px;
+	padding: 0px 10px;
+}
+#core_newsletter input:active {
+	border: 2px solid green;
+}
+#core_newsletter input:focus {
+	border: 2px solid green;
+}
+/*
+#core_newsletter input:invalid {
+	border: 2px solid red;
+}
+*/
+
+#core_newsletter .news_submit {
+	background: whitesmoke;
+
+	border: 2px solid gray;
+	border-radius: 10px;
+	outline: none;
+
+	width: 150px;
+	height: 40px;
+
+	margin: 10px 0px 0px 0px;
+	padding: 0px 10px;
+
+	display: block;
+}
+
+
+/*
+	A PROPOS
+*/
+#core_about_us {
+	padding: 0px 0px 0px 20px;
+}
+
+#core_about_us h2 {
+	font-size: 30px;
+	margin: 20px 0px;
+
+	display: block;
+}
+
+#core_about_us strong {
+	font-size: large;
+	margin: 0px 0px 10px 0px;
+}
+
+#core_about_us li {
+	margin: 0px 0px 10px 0px;
+}
+
+/*
+	PRESTATAIRES CAROUSEL
+
+#prestataires_carousel {
+	width: 80%;
+	height: 300px;
+
+	margin: auto;
+	padding: 0px;
+
+	overflow: hidden;
+}
+
+#prestataires_carousel_hack {
+	width: 1000%;
+	height: 300px;
+
+	padding: 0px;
+}
+
+#prestataires_carousel_hack li {
+	display: inline-block;
+
+	width: calc(100% / 10);
+	height: 300px;
+
+	margin: 0px;
+	padding: 0px;
+
+	float: left;
+}
+
+#carousel_control_back, #carousel_control_next {
+	position: relative;
+
+	background: black;
+
+	width: 60px;
+	height: 25px;
+
+	display: inline-block;
+}
+
+#carousel_control_back {
+	float: left;
+}
+
+#carousel_control_next {
+	float: right;
+}
+*/
